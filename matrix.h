@@ -1,3 +1,12 @@
+/* Andre Augusto Giannotti Scota
+ * andre.scota@gmail.com
+ *
+ * My Math Library
+ *
+ * MIT License
+ *
+ */
+
 #ifndef __MATRIX__
 #define __MATRIX__
 
