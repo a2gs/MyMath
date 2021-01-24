@@ -1,5 +1,7 @@
 # Prerequisites
 *.d
+test
+core
 
 # Object files
 *.o
