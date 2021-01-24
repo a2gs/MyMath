@@ -1,3 +1,12 @@
+/* Andre Augusto Giannotti Scota
+ * andre.scota@gmail.com
+ *
+ * My Math Library
+ *
+ * MIT License
+ *
+ */
+
 #include <stdlib.h>
 #include <string.h>
 #include "matrix.h"
