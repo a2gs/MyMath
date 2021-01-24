@@ -1,3 +1,12 @@
+/* Andre Augusto Giannotti Scota
+ * andre.scota@gmail.com
+ *
+ * My Math Library' PoC
+ *
+ * MIT License
+ *
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 
