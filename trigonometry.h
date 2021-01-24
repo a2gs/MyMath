@@ -1,5 +1,14 @@
+/* Andre Augusto Giannotti Scota
+ * andre.scota@gmail.com
+ *
+ * My Math Library
+ *
+ * MIT License
+ *
+ */
+
 #ifndef __TRIGONOMETRY__
-#define TRIGONOMETRY__
+#define __TRIGONOMETRY__
 
 double DegreeToRad(double d);
 double RadToDegree(double r);
