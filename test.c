@@ -12,6 +12,8 @@
 
 #include "trigonometry.h"
 #include "matrix.h"
+#include "complex.h"
+#include "factorial.h"
 
 static inline unsigned int os(unsigned int l, unsigned int c, unsigned int cTot)
 {
@@ -49,6 +51,10 @@ int main(int argc, char *argv[])
 	printf("[%f]\n", SinAminusSinB(DegreeToRad(30.0), DegreeToRad(60.0)));
 	printf("[%f]\n", CosAplusCosB(DegreeToRad(30.0), DegreeToRad(60.0)));
 	printf("[%f]\n", CosAminusCosB(DegreeToRad(30.0), DegreeToRad(60.0)));
+
+	printf("\n");
+
+	printf("Defined factorial [5,2[: [%lld]\n", DefinedFactorial(5, 2)); 
 
 	printf("\n");
 

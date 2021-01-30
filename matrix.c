@@ -9,6 +9,7 @@
 
 #include <stdlib.h>
 #include <string.h>
+
 #include "matrix.h"
 
 static inline unsigned int offset(unsigned int l, unsigned int c, unsigned int cTot)

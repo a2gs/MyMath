@@ -5,7 +5,7 @@ CFLAGS_OPTIMIZATION = -g
 CFLAGS_VERSION = -std=c11
 CFLAGS_WARNINGS = -Wall -Wextra -Wno-unused-parameter -Wno-unused-but-set-parameter
 CFLAGS_DEFINES = -D_XOPEN_SOURCE=700 -D_POSIX_C_SOURCE=200809L -D_POSIX_SOURCE=1 -D_DEFAULT_SOURCE=1 -D_GNU_SOURCE=1
-CFLAGS = $(CFLAGS_OPTIMIZATION) $(CFLAGS_VERSION) $(CFLAGS_WARNINGS) $(CFLAGS_DEFINES)
+CFLAGS = $(CFLAGS_OPTIMIZATION) $(CFLAGS_VERSION) $(CFLAGS_WARNINGS) $(CFLAGS_DEFINES) -fcx-limited-range -ffp-contract=fast
 
 # System shell utilities
 CC = gcc
@@ -19,12 +19,17 @@ INCLUDEPATH = -I./
 LIBS = -lm
 LIBPATH = -L./
 
+SOURCES = trigonometry.c \
+          matrix.c       \
+          factorial.c    \
+          complex.c
+
 all: clean exectag
 
 exectag:
 	@echo
 	@echo "=== Compiling =============="
-	$(CC) -o test test.c trigonometry.c matrix.c $(CFLAGS) $(INCLUDEPATH) $(LIBPATH) $(LIBS)
+	$(CC) -o test test.c $(SOURCES) $(CFLAGS) $(INCLUDEPATH) $(LIBPATH) $(LIBS)
 
 clean:
 	@echo
